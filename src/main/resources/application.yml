@@ -1,0 +1,20 @@
+server:
+  port: 9090
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+
+    enabled: true
+    tagsSorter: alpha
+    operations-sorter: alpha
+    display-request-duration: true
+    path: /swagger-ui.html
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
